@@ -1,74 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Chris Iaconetti</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Chris Iaconetti">
-	<meta name="keywords" content="resume, civic, onepage, creative, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
-
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/flaticon.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/magnific-popup.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-
-
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 </head>
 <body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
 
-	<!-- Hero section start -->
-	<section class="hero-section spad">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-10 offset-xl-1">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="hero-text">
-								<h2>Chris Iaconetti</h2>
-								<p>I’m a recent graduate from the University of Michigan with a Bachelor of Science in Mechanical Engineering and a minor in Computer Science.</p>
-							</div>
-							<div class="hero-info">
-								<h2>Contact Me</h2>
-								<ul>
-									<li><span>E-mail</span>ciaconet@umich.edu</li>
-                    <a href="files/Resume20200408_ChrisIaconetti_Website.pdf" class="site-btn">Download Resume</a>
-                            </div>
-						</div>
-						<div class="col-lg-6">
-							<figure class="hero-image">
-								<img src="img/me_with_fish.JPG" alt="5">
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Hero section end -->
+<!-- Create header but leave blank just to take up space -->
+<div class="header">
+    <h1></h1>
+</div>
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
-	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script>
+<!-- Create one Row and add both columns to that row -->
+<div class="row">
+<!-- First column contains all text and links to content/pages -->
+    <div class="buffer_column_left">
+    </div>
+    <div class="column">
+        <div class="row">
+                <h1>Chris Iaconetti</h1>
+                <p>Hi! I'm a recent graduate from the University of Michigan with a Bachelor of Science in Mechanical Engineering. I also have a minor in Computer Science. I'm interested in space exploration, sustainable engineering, finance, and quantitative security analysis. In my free time you'll find me fishing or hiking.
+                </p>
+        </div>
+        <div class="row">
+            <h2>&nbsp</h2>
+            <h2>&nbsp</h2>
+            <h2>&nbsp</h2>
+        </div>
+        <h2>Contact Me</h2>
+        <p><b>Email:</b> ciaconet@umich.edu</p>
+        <button onclick="window.location.href='/files/Resume20200408_ChrisIaconetti_Website.pdf';" class="resume_button">
+Download/View Resume
+        </button>
+    </div>
+    <!-- Second column contains only photo -->
+    <div class="column">
+        <img src="/img/me_with_fish.JPG" alt="Picture of me" class="center_image">
+    </div>
+    
+    <div class="buffer_column_right">
+    </div>
+<!-- End Row Div -->
+</div>
+
 </body>
 </html>

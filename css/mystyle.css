@@ -1,0 +1,86 @@
+/* Changes all types, currently does nothing: */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Formatted as blank just to shift contents downwards: */
+.header {
+    background-color: #f2f7f8;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Create Two Column Layout (on mobile set to 1): */
+.column { 
+    float: left;
+    width: 40.0%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* Create columns to fill with blank space as buffers: */
+.buffer_column_left::before { 
+    float: left;
+    width: 10%;
+    content: "\a0"
+}
+
+.buffer_column_right::before { 
+    float: right;
+    width: 10%;
+    content: "\a0"
+}
+
+body {
+    background-color: #f2f7f8;
+}
+
+h1 {
+    color: black;
+    font-family: "Arial";
+    text-align: left;
+    font-size: 50px;
+}
+
+h2 {
+    color: black;
+    font-family: "Arial";
+    text-align: left;
+}
+
+p {
+    color: black;
+    font-family: "Arial";
+    text-align: left;
+    font-size: 20px;
+}
+
+.resume_button { 
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px
+}
+
+.center_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+  }
+
